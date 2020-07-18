@@ -3,16 +3,19 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		2D344DBDB95A20BA203D889C /* Pods_Mastering_AnimationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 165F3493A2D84D6A3DFC5A7A /* Pods_Mastering_AnimationTests.framework */; };
 		3DCB543C87362973AF8042C7 /* Pods_Mastering_Animation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56F631A6442801DC8FC4A7CD /* Pods_Mastering_Animation.framework */; };
+		F086D9E224BDE3840021E78A /* SampleAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F086D9E124BDE3840021E78A /* SampleAnimationViewController.swift */; };
+		F086D9E424BDE9DB0021E78A /* TableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F086D9E324BDE9DB0021E78A /* TableViewModel.swift */; };
+		F086D9E624BDE9FC0021E78A /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F086D9E524BDE9FC0021E78A /* ListTableViewCell.swift */; };
+		F092AF1824C2FDDC0078C097 /* CardGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F092AF1724C2FDDC0078C097 /* CardGameViewController.swift */; };
 		F0C305CC24BBE2BE000F662D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C305CB24BBE2BE000F662D /* AppDelegate.swift */; };
 		F0C305CE24BBE2BE000F662D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C305CD24BBE2BE000F662D /* SceneDelegate.swift */; };
-		F0C305D024BBE2BE000F662D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C305CF24BBE2BE000F662D /* ViewController.swift */; };
-		F0C305D324BBE2BE000F662D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0C305D124BBE2BE000F662D /* Main.storyboard */; };
+		F0C305D024BBE2BE000F662D /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C305CF24BBE2BE000F662D /* ListViewController.swift */; };
 		F0C305D524BBE2C2000F662D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0C305D424BBE2C2000F662D /* Assets.xcassets */; };
 		F0C305D824BBE2C2000F662D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0C305D624BBE2C2000F662D /* LaunchScreen.storyboard */; };
 		F0C305E324BBE2C2000F662D /* Mastering_AnimationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C305E224BBE2C2000F662D /* Mastering_AnimationTests.swift */; };
@@ -35,11 +38,14 @@
 		C096F8FB92F1F53C40077F8F /* Pods-Mastering_Animation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mastering_Animation.release.xcconfig"; path = "Target Support Files/Pods-Mastering_Animation/Pods-Mastering_Animation.release.xcconfig"; sourceTree = "<group>"; };
 		CF1DD6A31AC597AB996F41C7 /* Pods-Mastering_Animation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mastering_Animation.debug.xcconfig"; path = "Target Support Files/Pods-Mastering_Animation/Pods-Mastering_Animation.debug.xcconfig"; sourceTree = "<group>"; };
 		E3D680560D466371EBB4F807 /* Pods-Mastering_AnimationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mastering_AnimationTests.debug.xcconfig"; path = "Target Support Files/Pods-Mastering_AnimationTests/Pods-Mastering_AnimationTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F086D9E124BDE3840021E78A /* SampleAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleAnimationViewController.swift; sourceTree = "<group>"; };
+		F086D9E324BDE9DB0021E78A /* TableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewModel.swift; sourceTree = "<group>"; };
+		F086D9E524BDE9FC0021E78A /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
+		F092AF1724C2FDDC0078C097 /* CardGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardGameViewController.swift; sourceTree = "<group>"; };
 		F0C305C824BBE2BE000F662D /* Mastering_Animation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mastering_Animation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0C305CB24BBE2BE000F662D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F0C305CD24BBE2BE000F662D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F0C305CF24BBE2BE000F662D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F0C305D224BBE2BE000F662D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F0C305CF24BBE2BE000F662D /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		F0C305D424BBE2C2000F662D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F0C305D724BBE2C2000F662D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F0C305D924BBE2C2000F662D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -76,7 +82,6 @@
 				E3D680560D466371EBB4F807 /* Pods-Mastering_AnimationTests.debug.xcconfig */,
 				4B7A8DB9EA13B4A13DF09EF2 /* Pods-Mastering_AnimationTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -87,6 +92,23 @@
 				165F3493A2D84D6A3DFC5A7A /* Pods_Mastering_AnimationTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F05DBE6924C18DC800CC442C /* MainList */ = {
+			isa = PBXGroup;
+			children = (
+				F0C305CF24BBE2BE000F662D /* ListViewController.swift */,
+				F086D9E524BDE9FC0021E78A /* ListTableViewCell.swift */,
+			);
+			path = MainList;
+			sourceTree = "<group>";
+		};
+		F092AF1624C2FDAA0078C097 /* CardGame */ = {
+			isa = PBXGroup;
+			children = (
+				F092AF1724C2FDDC0078C097 /* CardGameViewController.swift */,
+			);
+			path = CardGame;
 			sourceTree = "<group>";
 		};
 		F0C305BF24BBE2BE000F662D = {
@@ -112,10 +134,12 @@
 		F0C305CA24BBE2BE000F662D /* Mastering_Animation */ = {
 			isa = PBXGroup;
 			children = (
+				F086D9E324BDE9DB0021E78A /* TableViewModel.swift */,
+				F092AF1624C2FDAA0078C097 /* CardGame */,
+				F05DBE6924C18DC800CC442C /* MainList */,
 				F0C305CB24BBE2BE000F662D /* AppDelegate.swift */,
 				F0C305CD24BBE2BE000F662D /* SceneDelegate.swift */,
-				F0C305CF24BBE2BE000F662D /* ViewController.swift */,
-				F0C305D124BBE2BE000F662D /* Main.storyboard */,
+				F086D9E124BDE3840021E78A /* SampleAnimationViewController.swift */,
 				F0C305D424BBE2C2000F662D /* Assets.xcassets */,
 				F0C305D624BBE2C2000F662D /* LaunchScreen.storyboard */,
 				F0C305D924BBE2C2000F662D /* Info.plist */,
@@ -218,7 +242,6 @@
 			files = (
 				F0C305D824BBE2C2000F662D /* LaunchScreen.storyboard in Resources */,
 				F0C305D524BBE2C2000F662D /* Assets.xcassets in Resources */,
-				F0C305D324BBE2BE000F662D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,9 +323,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F0C305D024BBE2BE000F662D /* ViewController.swift in Sources */,
+				F0C305D024BBE2BE000F662D /* ListViewController.swift in Sources */,
+				F086D9E424BDE9DB0021E78A /* TableViewModel.swift in Sources */,
+				F092AF1824C2FDDC0078C097 /* CardGameViewController.swift in Sources */,
 				F0C305CC24BBE2BE000F662D /* AppDelegate.swift in Sources */,
 				F0C305CE24BBE2BE000F662D /* SceneDelegate.swift in Sources */,
+				F086D9E224BDE3840021E78A /* SampleAnimationViewController.swift in Sources */,
+				F086D9E624BDE9FC0021E78A /* ListTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,14 +352,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F0C305D124BBE2BE000F662D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F0C305D224BBE2BE000F662D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F0C305D624BBE2C2000F662D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
