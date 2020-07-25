@@ -60,9 +60,24 @@ extension ListViewController: UITableViewDelegate,UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 40
     }
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        listTableview.deselectRow(at: indexPath, animated: true)
         if indexPath.row == 0 {
-            navigationController?.pushViewController(CardGameViewController(), animated: true)
+            let vc = UIStoryboard(name: "CardGameSB", bundle: nil).instantiateViewController(withIdentifier: "CardGameSB")
+            navigationController?.pushViewController(vc, animated: true)
+        } else if indexPath.row == 1 {
+            let vc = UIStoryboard(name: "FloatingButtonSB", bundle: nil).instantiateViewController(withIdentifier: "FloatingButtonSB")
+            navigationController?.pushViewController(vc, animated: true)
+        } else if indexPath.row == 2 {
+            
+        }   else if indexPath.row == 3 {
+            
+        }   else if indexPath.row == 4 {
+            
+        }   else if indexPath.row == 5 {
+            
         }
     }
+
 }

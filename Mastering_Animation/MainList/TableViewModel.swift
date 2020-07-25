@@ -10,5 +10,5 @@ import Foundation
 
 class TableViewModel {
     static var shared = TableViewModel()
-    var title = ["Property Animation","Card Game"]
+    var title = ["Card Game","Floating Button", "Blooming View", "RealTime Bezier Graphic","Side Menu", "Copy App Store"]
 }

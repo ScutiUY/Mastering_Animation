@@ -7,23 +7,20 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Card Game View Controller-->
-        <scene sceneID="EG5-bD-jat">
+        <!--Floating Button View Controller-->
+        <scene sceneID="tXg-kw-Bsy">
             <objects>
-                <viewController storyboardIdentifier="CardGameSB" id="Eh8-0H-0Jh" customClass="CardGameViewController" customModule="Mastering_Animation" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ajQ-Fj-D2c">
+                <viewController storyboardIdentifier="FloatingButtonSB" id="MUo-Lu-m2k" customClass="FloatingButtonViewController" customModule="Mastering_Animation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rhB-tr-8tf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="pfL-rd-LeS"/>
+                        <viewLayoutGuide key="safeArea" id="ili-je-k3e"/>
                     </view>
-                    <toolbarItems/>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cN2-jy-gja" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="7Ji-dU-Tyz"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YsE-PI-76L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="173.91304347826087" y="174.77678571428569"/>
+            <point key="canvasLocation" x="77" y="127"/>
         </scene>
     </scenes>
 </document>

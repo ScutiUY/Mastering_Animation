@@ -9,12 +9,19 @@
 /* Begin PBXBuildFile section */
 		2D344DBDB95A20BA203D889C /* Pods_Mastering_AnimationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 165F3493A2D84D6A3DFC5A7A /* Pods_Mastering_AnimationTests.framework */; };
 		3DCB543C87362973AF8042C7 /* Pods_Mastering_Animation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56F631A6442801DC8FC4A7CD /* Pods_Mastering_Animation.framework */; };
+		F00DD67424C732AD007681FF /* FloatingButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00DD67324C732AD007681FF /* FloatingButtonViewController.swift */; };
+		F00DD67624C732B7007681FF /* FloatingButtonSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F00DD67524C732B7007681FF /* FloatingButtonSB.storyboard */; };
+		F00DD67924CA5785007681FF /* CardGameCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00DD67824CA5785007681FF /* CardGameCollectionViewCell.swift */; };
 		F086D9E224BDE3840021E78A /* SampleAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F086D9E124BDE3840021E78A /* SampleAnimationViewController.swift */; };
 		F086D9E424BDE9DB0021E78A /* TableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F086D9E324BDE9DB0021E78A /* TableViewModel.swift */; };
 		F086D9E624BDE9FC0021E78A /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F086D9E524BDE9FC0021E78A /* ListTableViewCell.swift */; };
 		F092AF1824C2FDDC0078C097 /* CardGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F092AF1724C2FDDC0078C097 /* CardGameViewController.swift */; };
 		F092AF1C24C343980078C097 /* CardGameSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F092AF1B24C343980078C097 /* CardGameSB.storyboard */; };
 		F092AF1E24C343A10078C097 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F092AF1D24C343A10078C097 /* Main.storyboard */; };
+		F092AF4724C6CAE10078C097 /* AppStoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F092AF4624C6CAE10078C097 /* AppStoreViewController.swift */; };
+		F092AF4924C6CAF40078C097 /* AppStoreSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F092AF4824C6CAF40078C097 /* AppStoreSB.storyboard */; };
+		F092AF4B24C6CAFF0078C097 /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F092AF4A24C6CAFF0078C097 /* SideMenuViewController.swift */; };
+		F092AF4D24C6CB100078C097 /* SideMenuSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F092AF4C24C6CB100078C097 /* SideMenuSB.storyboard */; };
 		F0C305CC24BBE2BE000F662D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C305CB24BBE2BE000F662D /* AppDelegate.swift */; };
 		F0C305CE24BBE2BE000F662D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C305CD24BBE2BE000F662D /* SceneDelegate.swift */; };
 		F0C305D024BBE2BE000F662D /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C305CF24BBE2BE000F662D /* ListViewController.swift */; };
@@ -40,12 +47,19 @@
 		C096F8FB92F1F53C40077F8F /* Pods-Mastering_Animation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mastering_Animation.release.xcconfig"; path = "Target Support Files/Pods-Mastering_Animation/Pods-Mastering_Animation.release.xcconfig"; sourceTree = "<group>"; };
 		CF1DD6A31AC597AB996F41C7 /* Pods-Mastering_Animation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mastering_Animation.debug.xcconfig"; path = "Target Support Files/Pods-Mastering_Animation/Pods-Mastering_Animation.debug.xcconfig"; sourceTree = "<group>"; };
 		E3D680560D466371EBB4F807 /* Pods-Mastering_AnimationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mastering_AnimationTests.debug.xcconfig"; path = "Target Support Files/Pods-Mastering_AnimationTests/Pods-Mastering_AnimationTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F00DD67324C732AD007681FF /* FloatingButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingButtonViewController.swift; sourceTree = "<group>"; };
+		F00DD67524C732B7007681FF /* FloatingButtonSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FloatingButtonSB.storyboard; sourceTree = "<group>"; };
+		F00DD67824CA5785007681FF /* CardGameCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardGameCollectionViewCell.swift; sourceTree = "<group>"; };
 		F086D9E124BDE3840021E78A /* SampleAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleAnimationViewController.swift; sourceTree = "<group>"; };
 		F086D9E324BDE9DB0021E78A /* TableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewModel.swift; sourceTree = "<group>"; };
 		F086D9E524BDE9FC0021E78A /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
 		F092AF1724C2FDDC0078C097 /* CardGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardGameViewController.swift; sourceTree = "<group>"; };
 		F092AF1B24C343980078C097 /* CardGameSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CardGameSB.storyboard; sourceTree = "<group>"; };
 		F092AF1D24C343A10078C097 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		F092AF4624C6CAE10078C097 /* AppStoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreViewController.swift; sourceTree = "<group>"; };
+		F092AF4824C6CAF40078C097 /* AppStoreSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AppStoreSB.storyboard; sourceTree = "<group>"; };
+		F092AF4A24C6CAFF0078C097 /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
+		F092AF4C24C6CB100078C097 /* SideMenuSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SideMenuSB.storyboard; sourceTree = "<group>"; };
 		F0C305C824BBE2BE000F662D /* Mastering_Animation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mastering_Animation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0C305CB24BBE2BE000F662D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F0C305CD24BBE2BE000F662D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -98,12 +112,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F00DD67724CA54AA007681FF /* CollectionView Transition */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "CollectionView Transition";
+			sourceTree = "<group>";
+		};
 		F05DBE6924C18DC800CC442C /* MainList */ = {
 			isa = PBXGroup;
 			children = (
 				F0C305CF24BBE2BE000F662D /* ListViewController.swift */,
 				F086D9E524BDE9FC0021E78A /* ListTableViewCell.swift */,
 				F092AF1D24C343A10078C097 /* Main.storyboard */,
+				F086D9E324BDE9DB0021E78A /* TableViewModel.swift */,
 			);
 			path = MainList;
 			sourceTree = "<group>";
@@ -112,9 +134,51 @@
 			isa = PBXGroup;
 			children = (
 				F092AF1724C2FDDC0078C097 /* CardGameViewController.swift */,
+				F00DD67824CA5785007681FF /* CardGameCollectionViewCell.swift */,
 				F092AF1B24C343980078C097 /* CardGameSB.storyboard */,
 			);
 			path = CardGame;
+			sourceTree = "<group>";
+		};
+		F092AF3F24C562570078C097 /* Floating Button */ = {
+			isa = PBXGroup;
+			children = (
+				F00DD67324C732AD007681FF /* FloatingButtonViewController.swift */,
+				F00DD67524C732B7007681FF /* FloatingButtonSB.storyboard */,
+			);
+			path = "Floating Button";
+			sourceTree = "<group>";
+		};
+		F092AF4024C562680078C097 /* Blooming View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Blooming View";
+			sourceTree = "<group>";
+		};
+		F092AF4124C562710078C097 /* RealTime Bezier Graphic */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "RealTime Bezier Graphic";
+			sourceTree = "<group>";
+		};
+		F092AF4224C5627E0078C097 /* Side Menu */ = {
+			isa = PBXGroup;
+			children = (
+				F092AF4A24C6CAFF0078C097 /* SideMenuViewController.swift */,
+				F092AF4C24C6CB100078C097 /* SideMenuSB.storyboard */,
+			);
+			path = "Side Menu";
+			sourceTree = "<group>";
+		};
+		F092AF4324C562860078C097 /* Copy App Store */ = {
+			isa = PBXGroup;
+			children = (
+				F092AF4624C6CAE10078C097 /* AppStoreViewController.swift */,
+				F092AF4824C6CAF40078C097 /* AppStoreSB.storyboard */,
+			);
+			path = "Copy App Store";
 			sourceTree = "<group>";
 		};
 		F0C305BF24BBE2BE000F662D = {
@@ -140,7 +204,12 @@
 		F0C305CA24BBE2BE000F662D /* Mastering_Animation */ = {
 			isa = PBXGroup;
 			children = (
-				F086D9E324BDE9DB0021E78A /* TableViewModel.swift */,
+				F00DD67724CA54AA007681FF /* CollectionView Transition */,
+				F092AF4324C562860078C097 /* Copy App Store */,
+				F092AF4224C5627E0078C097 /* Side Menu */,
+				F092AF4124C562710078C097 /* RealTime Bezier Graphic */,
+				F092AF4024C562680078C097 /* Blooming View */,
+				F092AF3F24C562570078C097 /* Floating Button */,
 				F092AF1624C2FDAA0078C097 /* CardGame */,
 				F05DBE6924C18DC800CC442C /* MainList */,
 				F0C305CB24BBE2BE000F662D /* AppDelegate.swift */,
@@ -247,8 +316,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0C305D824BBE2C2000F662D /* LaunchScreen.storyboard in Resources */,
+				F092AF4D24C6CB100078C097 /* SideMenuSB.storyboard in Resources */,
 				F092AF1C24C343980078C097 /* CardGameSB.storyboard in Resources */,
 				F0C305D524BBE2C2000F662D /* Assets.xcassets in Resources */,
+				F00DD67624C732B7007681FF /* FloatingButtonSB.storyboard in Resources */,
+				F092AF4924C6CAF40078C097 /* AppStoreSB.storyboard in Resources */,
 				F092AF1E24C343A10078C097 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -333,10 +405,14 @@
 			files = (
 				F0C305D024BBE2BE000F662D /* ListViewController.swift in Sources */,
 				F086D9E424BDE9DB0021E78A /* TableViewModel.swift in Sources */,
+				F00DD67924CA5785007681FF /* CardGameCollectionViewCell.swift in Sources */,
+				F00DD67424C732AD007681FF /* FloatingButtonViewController.swift in Sources */,
 				F092AF1824C2FDDC0078C097 /* CardGameViewController.swift in Sources */,
 				F0C305CC24BBE2BE000F662D /* AppDelegate.swift in Sources */,
+				F092AF4724C6CAE10078C097 /* AppStoreViewController.swift in Sources */,
 				F0C305CE24BBE2BE000F662D /* SceneDelegate.swift in Sources */,
 				F086D9E224BDE3840021E78A /* SampleAnimationViewController.swift in Sources */,
+				F092AF4B24C6CAFF0078C097 /* SideMenuViewController.swift in Sources */,
 				F086D9E624BDE9FC0021E78A /* ListTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -18,7 +18,6 @@ class ListTableViewCell: UITableViewCell {
  
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        setLayout()
     }
     
     required init?(coder: NSCoder) {
@@ -29,6 +28,10 @@ class ListTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    override func layoutSubviews() {
+        setLayout()
+    }
+    
     func setLayout() {
         contentView.addSubview(title)
         
@@ -43,3 +46,4 @@ class ListTableViewCell: UITableViewCell {
     }
     
 }
+
