@@ -12,6 +12,7 @@
 		F00DD67424C732AD007681FF /* FloatingButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00DD67324C732AD007681FF /* FloatingButtonViewController.swift */; };
 		F00DD67624C732B7007681FF /* FloatingButtonSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F00DD67524C732B7007681FF /* FloatingButtonSB.storyboard */; };
 		F00DD67924CA5785007681FF /* CardGameCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00DD67824CA5785007681FF /* CardGameCollectionViewCell.swift */; };
+		F07020B824CC0C17001AE49A /* CardImageSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07020B724CC0C17001AE49A /* CardImageSet.swift */; };
 		F086D9E224BDE3840021E78A /* SampleAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F086D9E124BDE3840021E78A /* SampleAnimationViewController.swift */; };
 		F086D9E424BDE9DB0021E78A /* TableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F086D9E324BDE9DB0021E78A /* TableViewModel.swift */; };
 		F086D9E624BDE9FC0021E78A /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F086D9E524BDE9FC0021E78A /* ListTableViewCell.swift */; };
@@ -50,6 +51,7 @@
 		F00DD67324C732AD007681FF /* FloatingButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingButtonViewController.swift; sourceTree = "<group>"; };
 		F00DD67524C732B7007681FF /* FloatingButtonSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FloatingButtonSB.storyboard; sourceTree = "<group>"; };
 		F00DD67824CA5785007681FF /* CardGameCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardGameCollectionViewCell.swift; sourceTree = "<group>"; };
+		F07020B724CC0C17001AE49A /* CardImageSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardImageSet.swift; sourceTree = "<group>"; };
 		F086D9E124BDE3840021E78A /* SampleAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleAnimationViewController.swift; sourceTree = "<group>"; };
 		F086D9E324BDE9DB0021E78A /* TableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewModel.swift; sourceTree = "<group>"; };
 		F086D9E524BDE9FC0021E78A /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 				F092AF1724C2FDDC0078C097 /* CardGameViewController.swift */,
 				F00DD67824CA5785007681FF /* CardGameCollectionViewCell.swift */,
 				F092AF1B24C343980078C097 /* CardGameSB.storyboard */,
+				F07020B724CC0C17001AE49A /* CardImageSet.swift */,
 			);
 			path = CardGame;
 			sourceTree = "<group>";
@@ -409,6 +412,7 @@
 				F00DD67424C732AD007681FF /* FloatingButtonViewController.swift in Sources */,
 				F092AF1824C2FDDC0078C097 /* CardGameViewController.swift in Sources */,
 				F0C305CC24BBE2BE000F662D /* AppDelegate.swift in Sources */,
+				F07020B824CC0C17001AE49A /* CardImageSet.swift in Sources */,
 				F092AF4724C6CAE10078C097 /* AppStoreViewController.swift in Sources */,
 				F0C305CE24BBE2BE000F662D /* SceneDelegate.swift in Sources */,
 				F086D9E224BDE3840021E78A /* SampleAnimationViewController.swift in Sources */,
