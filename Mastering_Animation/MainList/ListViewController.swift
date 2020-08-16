@@ -10,21 +10,25 @@ import UIKit
 import SnapKit
 
 class ListViewController: UIViewController {
-
+    
     private lazy var listTableview: UITableView = {
         var tableview = UITableView()
         tableview.backgroundColor = .lightGray
         return tableview
     }()
     
+    enum ListOfAnimation: Int {
+        case CardGame, FloatingButton, BloomingTransition, RealTimeBezierGraphic, SideMenu, CopyAppStore, FadeAwayPresentation
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
         setLayout()
-    
+        
         // Do any additional setup after loading the view.
     }
-    
+    //MARK:- figuring layout
     private func setLayout() {
         view.addSubview(listTableview)
         
@@ -42,10 +46,11 @@ class ListViewController: UIViewController {
         listTableview.dataSource = self
         listTableview.register(ListTableViewCell.self, forCellReuseIdentifier: "ListTableViewCell")
     }
-
+    
 }
-
+//MARK:- TableView Method
 extension ListViewController: UITableViewDelegate,UITableViewDataSource {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return TableViewModel.shared.title.count
     }
@@ -63,21 +68,28 @@ extension ListViewController: UITableViewDelegate,UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         listTableview.deselectRow(at: indexPath, animated: true)
-        if indexPath.row == 0 {
+        let menu: ListOfAnimation = ListViewController.ListOfAnimation(rawValue: indexPath.row)!
+        
+        switch menu {
+        case .CardGame:
             let vc = UIStoryboard(name: "CardGameSB", bundle: nil).instantiateViewController(withIdentifier: "CardGameSB")
+            
             navigationController?.pushViewController(vc, animated: true)
-        } else if indexPath.row == 1 {
+        case .BloomingTransition:
+            let bloomingVC = UIStoryboard(name: "BloomingStoryBoard", bundle: nil).instantiateViewController(withIdentifier: "BloomingStoryBoard")
+            navigationController?.pushViewController(bloomingVC, animated: true)
+        case .CopyAppStore:
+            return
+        case .FloatingButton:
             let vc = UIStoryboard(name: "FloatingButtonSB", bundle: nil).instantiateViewController(withIdentifier: "FloatingButtonSB")
             navigationController?.pushViewController(vc, animated: true)
-        } else if indexPath.row == 2 {
-            
-        }   else if indexPath.row == 3 {
-            
-        }   else if indexPath.row == 4 {
-            
-        }   else if indexPath.row == 5 {
-            
+        case .RealTimeBezierGraphic:
+            return
+        case .SideMenu:
+            return
+        case .FadeAwayPresentation:
+            let fadeVC = UIStoryboard(name: "FadeAwayPresentationStoryboard", bundle: nil).instantiateViewController(withIdentifier: "FadeAwayPresentationStoryboard")
+            navigationController?.pushViewController(fadeVC, animated: true)
         }
     }
-
 }

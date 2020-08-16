@@ -11,9 +11,11 @@ import SnapKit
 class CardGameViewController: UIViewController {
     
     static let noti = Notification.Name.init("Noti")
+    static let alertNoti = Notification.Name.init("Noti")
     var cardFlipped = false
     var compareCard: Array<CardGameCollectionViewCell> = []
     var matchedCount = 0
+    var timer = Timer()
     
     lazy var cardCollectionView: UICollectionView = {
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: collectionViewLayout())
@@ -37,6 +39,16 @@ class CardGameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setLayout()
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+//        NotificationCenter.default.addObserver(forName: CardGameViewController.alertNoti, object: nil, queue: .main) { (noti) in
+//            self.cardCollectionView.reloadData()
+//        }
+    }
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        NotificationCenter.default.removeObserver(self)
     }
     
     //MARK:- Configure Layout
@@ -67,7 +79,6 @@ class CardGameViewController: UIViewController {
         layout.itemSize.width = view.frame.width / 4
         layout.itemSize.height = view.frame.height / 5
         layout.minimumInteritemSpacing = 10
-        
         return layout
     }
 }
@@ -87,39 +98,8 @@ extension CardGameViewController: UICollectionViewDelegate, UICollectionViewData
         compareCards(cell)
     }
     
-    private func compareCards(_ cell: CardGameCollectionViewCell) {
-        
-        if !cardFlipped {   // 첫 번째 카드
-            cell.flipCard(false, secondImageView: nil)
-            compareCard.append(cell)
-            cardFlipped = true
-            
-        } else if cardFlipped { // 두 번째 카드
-            compareCard.append(cell)
-            if compareCard[0].frontImageView.image == compareCard[1].frontImageView.image { //맞았을 때
-                compareCard[1].flipCard(false, secondImageView: nil)
-                compareCard.removeAll()
-                matchedCount += 1
-                guard matchedCount != 6 else {
-                    alertSuccess()
-                    return
-                }
-            } else { // 안맞았을 때 이미 하난 뒤집혀 있음
-                compareCard[1].flipCard(true, secondImageView: compareCard[0])
-                compareCard.removeAll()
-            }
-            cardFlipped = false
-        }
-    }
-    func alertSuccess() {
-        let success = UIAlertAction.init(title: "닫기", style: .default) { (action) in
-            self.dismiss(animated: true, completion: nil)
-        }
-            let action = UIAlertController.init(title: "성공", message: "성공", preferredStyle: .alert)
-            action.addAction(success)
-            self.present(action, animated: true, completion: nil)
-        }
-    }
+    
+}
     //MARK:- Button Action
     extension CardGameViewController {
         @objc func gameStart() {
@@ -135,7 +115,7 @@ extension CardGameViewController: UICollectionViewDelegate, UICollectionViewData
         }
         private func timeStart() {
             var runCount = 0
-            let timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { (timer) in
+            timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { (timer) in
                 runCount += 1
                 let seconds = runCount % 60
                 let minutes = (runCount / 60) % 60
@@ -151,5 +131,40 @@ extension CardGameViewController: UICollectionViewDelegate, UICollectionViewData
         }
         private func flipAllCard() {
             NotificationCenter.default.post(name: CardGameViewController.noti, object: nil)
+        }
+        //MARK:- Comparing Card function
+        private func compareCards(_ cell: CardGameCollectionViewCell) {
+            if !cardFlipped {   // 첫 번째 카드
+                cell.flipCard(false, secondImageView: nil)
+                compareCard.append(cell)
+                cardFlipped = true
+                
+            } else if cardFlipped { // 두 번째 카드
+                compareCard.append(cell)
+                if compareCard[0].frontImageView.image == compareCard[1].frontImageView.image { //맞았을 때
+                    compareCard[1].flipCard(false, secondImageView: nil)
+                    compareCard.removeAll()
+                    matchedCount += 1
+                    guard matchedCount != 6 else {
+                        alertSuccess()
+                        return
+                    }
+                } else { // 안맞았을 때 이미 하난 뒤집혀 있음
+                    compareCard[1].flipCard(true, secondImageView: compareCard[0])
+                    compareCard.removeAll()
+                }
+                cardFlipped = false
+            }
+        }
+        private func alertSuccess() {
+            let success = UIAlertAction.init(title: "닫기", style: .default) { (action) in
+                self.dismiss(animated: true, completion: nil)
+            }
+            let action = UIAlertController.init(title: "성공", message: "성공", preferredStyle: .alert)
+            action.addAction(success)
+            self.present(action, animated: true) {
+                NotificationCenter.default.post(name: CardGameViewController.alertNoti, object: nil)
+                self.timer.invalidate()
+            }
         }
 }

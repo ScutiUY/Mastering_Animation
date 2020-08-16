@@ -12,7 +12,16 @@
 		F00DD67424C732AD007681FF /* FloatingButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00DD67324C732AD007681FF /* FloatingButtonViewController.swift */; };
 		F00DD67624C732B7007681FF /* FloatingButtonSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F00DD67524C732B7007681FF /* FloatingButtonSB.storyboard */; };
 		F00DD67924CA5785007681FF /* CardGameCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00DD67824CA5785007681FF /* CardGameCollectionViewCell.swift */; };
+		F05B6E8A24DA887E0080CB69 /* CircularTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05B6E8924DA887E0080CB69 /* CircularTransition.swift */; };
+		F05B6EE824DF75FD0080CB69 /* FadeAwayPresentationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05B6EE724DF75FD0080CB69 /* FadeAwayPresentationViewController.swift */; };
+		F05B6EEA24DF76C20080CB69 /* FadeAwayPresentationStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F05B6EE924DF76C20080CB69 /* FadeAwayPresentationStoryboard.storyboard */; };
+		F05B6EEC24DF77540080CB69 /* FadeAwayPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05B6EEB24DF77540080CB69 /* FadeAwayPresentation.swift */; };
+		F05B6EEE24E13BFE0080CB69 /* secondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05B6EED24E13BFE0080CB69 /* secondViewController.swift */; };
 		F07020B824CC0C17001AE49A /* CardImageSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07020B724CC0C17001AE49A /* CardImageSet.swift */; };
+		F0788F7B24CEEEE800082E25 /* FloatingButtonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0788F7A24CEEEE800082E25 /* FloatingButtonCollectionViewCell.swift */; };
+		F0788F7D24D2E62400082E25 /* BloomingStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0788F7C24D2E62400082E25 /* BloomingStoryBoard.storyboard */; };
+		F0788F7F24D2E65400082E25 /* BloomingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0788F7E24D2E65400082E25 /* BloomingViewController.swift */; };
+		F0788F8324D302C400082E25 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0788F8224D302C400082E25 /* SecondViewController.swift */; };
 		F086D9E224BDE3840021E78A /* SampleAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F086D9E124BDE3840021E78A /* SampleAnimationViewController.swift */; };
 		F086D9E424BDE9DB0021E78A /* TableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F086D9E324BDE9DB0021E78A /* TableViewModel.swift */; };
 		F086D9E624BDE9FC0021E78A /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F086D9E524BDE9FC0021E78A /* ListTableViewCell.swift */; };
@@ -51,7 +60,16 @@
 		F00DD67324C732AD007681FF /* FloatingButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingButtonViewController.swift; sourceTree = "<group>"; };
 		F00DD67524C732B7007681FF /* FloatingButtonSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FloatingButtonSB.storyboard; sourceTree = "<group>"; };
 		F00DD67824CA5785007681FF /* CardGameCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardGameCollectionViewCell.swift; sourceTree = "<group>"; };
+		F05B6E8924DA887E0080CB69 /* CircularTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularTransition.swift; sourceTree = "<group>"; };
+		F05B6EE724DF75FD0080CB69 /* FadeAwayPresentationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FadeAwayPresentationViewController.swift; sourceTree = "<group>"; };
+		F05B6EE924DF76C20080CB69 /* FadeAwayPresentationStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FadeAwayPresentationStoryboard.storyboard; sourceTree = "<group>"; };
+		F05B6EEB24DF77540080CB69 /* FadeAwayPresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FadeAwayPresentation.swift; sourceTree = "<group>"; };
+		F05B6EED24E13BFE0080CB69 /* secondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondViewController.swift; sourceTree = "<group>"; };
 		F07020B724CC0C17001AE49A /* CardImageSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardImageSet.swift; sourceTree = "<group>"; };
+		F0788F7A24CEEEE800082E25 /* FloatingButtonCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingButtonCollectionViewCell.swift; sourceTree = "<group>"; };
+		F0788F7C24D2E62400082E25 /* BloomingStoryBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BloomingStoryBoard.storyboard; sourceTree = "<group>"; };
+		F0788F7E24D2E65400082E25 /* BloomingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloomingViewController.swift; sourceTree = "<group>"; };
+		F0788F8224D302C400082E25 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		F086D9E124BDE3840021E78A /* SampleAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleAnimationViewController.swift; sourceTree = "<group>"; };
 		F086D9E324BDE9DB0021E78A /* TableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewModel.swift; sourceTree = "<group>"; };
 		F086D9E524BDE9FC0021E78A /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
@@ -114,11 +132,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F00DD67724CA54AA007681FF /* CollectionView Transition */ = {
+		F05B6EE624DF75D80080CB69 /* Fade Away Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				F05B6EE724DF75FD0080CB69 /* FadeAwayPresentationViewController.swift */,
+				F05B6EE924DF76C20080CB69 /* FadeAwayPresentationStoryboard.storyboard */,
+				F05B6EEB24DF77540080CB69 /* FadeAwayPresentation.swift */,
+				F05B6EED24E13BFE0080CB69 /* secondViewController.swift */,
 			);
-			path = "CollectionView Transition";
+			path = "Fade Away Presentation";
 			sourceTree = "<group>";
 		};
 		F05DBE6924C18DC800CC442C /* MainList */ = {
@@ -148,6 +170,7 @@
 			children = (
 				F00DD67324C732AD007681FF /* FloatingButtonViewController.swift */,
 				F00DD67524C732B7007681FF /* FloatingButtonSB.storyboard */,
+				F0788F7A24CEEEE800082E25 /* FloatingButtonCollectionViewCell.swift */,
 			);
 			path = "Floating Button";
 			sourceTree = "<group>";
@@ -155,6 +178,10 @@
 		F092AF4024C562680078C097 /* Blooming View */ = {
 			isa = PBXGroup;
 			children = (
+				F0788F7C24D2E62400082E25 /* BloomingStoryBoard.storyboard */,
+				F05B6E8924DA887E0080CB69 /* CircularTransition.swift */,
+				F0788F7E24D2E65400082E25 /* BloomingViewController.swift */,
+				F0788F8224D302C400082E25 /* SecondViewController.swift */,
 			);
 			path = "Blooming View";
 			sourceTree = "<group>";
@@ -207,7 +234,7 @@
 		F0C305CA24BBE2BE000F662D /* Mastering_Animation */ = {
 			isa = PBXGroup;
 			children = (
-				F00DD67724CA54AA007681FF /* CollectionView Transition */,
+				F05B6EE624DF75D80080CB69 /* Fade Away Presentation */,
 				F092AF4324C562860078C097 /* Copy App Store */,
 				F092AF4224C5627E0078C097 /* Side Menu */,
 				F092AF4124C562710078C097 /* RealTime Bezier Graphic */,
@@ -318,10 +345,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F05B6EEA24DF76C20080CB69 /* FadeAwayPresentationStoryboard.storyboard in Resources */,
 				F0C305D824BBE2C2000F662D /* LaunchScreen.storyboard in Resources */,
 				F092AF4D24C6CB100078C097 /* SideMenuSB.storyboard in Resources */,
 				F092AF1C24C343980078C097 /* CardGameSB.storyboard in Resources */,
 				F0C305D524BBE2C2000F662D /* Assets.xcassets in Resources */,
+				F0788F7D24D2E62400082E25 /* BloomingStoryBoard.storyboard in Resources */,
 				F00DD67624C732B7007681FF /* FloatingButtonSB.storyboard in Resources */,
 				F092AF4924C6CAF40078C097 /* AppStoreSB.storyboard in Resources */,
 				F092AF1E24C343A10078C097 /* Main.storyboard in Resources */,
@@ -409,12 +438,19 @@
 				F0C305D024BBE2BE000F662D /* ListViewController.swift in Sources */,
 				F086D9E424BDE9DB0021E78A /* TableViewModel.swift in Sources */,
 				F00DD67924CA5785007681FF /* CardGameCollectionViewCell.swift in Sources */,
+				F05B6E8A24DA887E0080CB69 /* CircularTransition.swift in Sources */,
+				F0788F8324D302C400082E25 /* SecondViewController.swift in Sources */,
+				F0788F7F24D2E65400082E25 /* BloomingViewController.swift in Sources */,
 				F00DD67424C732AD007681FF /* FloatingButtonViewController.swift in Sources */,
 				F092AF1824C2FDDC0078C097 /* CardGameViewController.swift in Sources */,
+				F0788F7B24CEEEE800082E25 /* FloatingButtonCollectionViewCell.swift in Sources */,
 				F0C305CC24BBE2BE000F662D /* AppDelegate.swift in Sources */,
+				F05B6EE824DF75FD0080CB69 /* FadeAwayPresentationViewController.swift in Sources */,
+				F05B6EEC24DF77540080CB69 /* FadeAwayPresentation.swift in Sources */,
 				F07020B824CC0C17001AE49A /* CardImageSet.swift in Sources */,
 				F092AF4724C6CAE10078C097 /* AppStoreViewController.swift in Sources */,
 				F0C305CE24BBE2BE000F662D /* SceneDelegate.swift in Sources */,
+				F05B6EEE24E13BFE0080CB69 /* secondViewController.swift in Sources */,
 				F086D9E224BDE3840021E78A /* SampleAnimationViewController.swift in Sources */,
 				F092AF4B24C6CAFF0078C097 /* SideMenuViewController.swift in Sources */,
 				F086D9E624BDE9FC0021E78A /* ListTableViewCell.swift in Sources */,

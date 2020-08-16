@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="eTk-jk-JaL">
+            <objects>
+                <viewController storyboardIdentifier="BloomingStoryBoard" id="YaQ-rk-hja" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Qcg-e0-k90">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t9P-bl-YHu">
+                                <rect key="frame" x="183" y="200" width="48" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.94239294529999995" green="0.85335779190000005" blue="0.1013566479" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
+                                <state key="normal" title="M">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="5LM-3P-wtA" kind="presentation" modalPresentationStyle="pageSheet" modalTransitionStyle="flipHorizontal" id="v1Q-fp-aDv"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DOPE" translatesAutoresizingMaskIntoConstraints="NO" id="q0Y-Cy-E8Q">
+                                <rect key="frame" x="0.0" y="538" width="414" height="224"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Cke-4W-3cv" firstAttribute="bottom" secondItem="q0Y-Cy-E8Q" secondAttribute="bottom" constant="100" id="AA4-Ca-Ulr"/>
+                            <constraint firstItem="q0Y-Cy-E8Q" firstAttribute="height" secondItem="Qcg-e0-k90" secondAttribute="height" multiplier="0.25" id="DK8-JB-CdB"/>
+                            <constraint firstItem="q0Y-Cy-E8Q" firstAttribute="leading" secondItem="Cke-4W-3cv" secondAttribute="leading" id="T4l-EO-GQf"/>
+                            <constraint firstItem="q0Y-Cy-E8Q" firstAttribute="trailing" secondItem="Cke-4W-3cv" secondAttribute="trailing" id="k2X-DB-OWp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Cke-4W-3cv"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mnF-xg-LlQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="265.21739130434787" y="87.723214285714278"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="Ugf-J7-uTG">
+            <objects>
+                <viewController id="5LM-3P-wtA" customClass="SecondViewController" customModule="Mastering_Animation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cdF-MG-7U5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xgF-Sp-ebV">
+                                <rect key="frame" x="183" y="200" width="48" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.94239294529999995" green="0.85335779190000005" blue="0.1013566479" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
+                                <state key="normal" title="M">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="dismissSecondVC:" destination="5LM-3P-wtA" eventType="touchUpInside" id="6TB-ps-fP4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="xgv-wH-blC"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="fM8-du-cog"/>
+                    <connections>
+                        <outlet property="dismissButton" destination="xgF-Sp-ebV" id="ial-jn-Svy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wlP-Sz-sPY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1026" y="88"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="DOPE" width="112.5" height="112.5"/>
+    </resources>
+</document>
