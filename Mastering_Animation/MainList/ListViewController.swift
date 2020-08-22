@@ -73,16 +73,20 @@ extension ListViewController: UITableViewDelegate,UITableViewDataSource {
         switch menu {
         case .CardGame:
             let vc = UIStoryboard(name: "CardGameSB", bundle: nil).instantiateViewController(withIdentifier: "CardGameSB")
-            
             navigationController?.pushViewController(vc, animated: true)
+            
         case .BloomingTransition:
             let bloomingVC = UIStoryboard(name: "BloomingStoryBoard", bundle: nil).instantiateViewController(withIdentifier: "BloomingStoryBoard")
             navigationController?.pushViewController(bloomingVC, animated: true)
+            
         case .CopyAppStore:
-            return
+            let appStoreVC = UIStoryboard(name: "AppStoreSB", bundle: nil).instantiateViewController(withIdentifier: "AppStoreSB")
+            navigationController?.pushViewController(appStoreVC, animated: true)
+            
         case .FloatingButton:
             let vc = UIStoryboard(name: "FloatingButtonSB", bundle: nil).instantiateViewController(withIdentifier: "FloatingButtonSB")
             navigationController?.pushViewController(vc, animated: true)
+            
         case .RealTimeBezierGraphic:
             return
         case .SideMenu:

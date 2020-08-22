@@ -42,9 +42,7 @@ class CardGameViewController: UIViewController {
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-//        NotificationCenter.default.addObserver(forName: CardGameViewController.alertNoti, object: nil, queue: .main) { (noti) in
-//            self.cardCollectionView.reloadData()
-//        }
+
     }
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)

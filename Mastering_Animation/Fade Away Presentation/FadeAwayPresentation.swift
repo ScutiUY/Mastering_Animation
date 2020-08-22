@@ -9,6 +9,7 @@
 import UIKit
 import SnapKit
 class FadeAwayPresentation: UIPresentationController {
+    
     let dimmingView: UIVisualEffectView = {
         var view = UIVisualEffectView(effect: UIBlurEffect(style: .dark))
         view.translatesAutoresizingMaskIntoConstraints = false
