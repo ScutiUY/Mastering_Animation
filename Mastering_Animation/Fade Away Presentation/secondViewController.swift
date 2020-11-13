@@ -2,7 +2,7 @@
 //  secondViewController.swift
 //  Mastering_Animation
 //
-//  Created by 신의연 on 2020/08/10.
+//  Created by UY on 2020/08/10.
 //  Copyright © 2020 Koggy. All rights reserved.
 //
 
